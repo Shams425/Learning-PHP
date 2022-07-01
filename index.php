@@ -31,6 +31,7 @@
       
       $test = "hello world";
       echo "<br> ========================= <br>"; 
+
       
       $test[20] = "a";
       echo $test;
@@ -52,6 +53,8 @@
       echo "<br> ========================= <br>"; 
 
       echo strlen(trim("           hello            " ));
+
+      str_pad("hello",8,"*")
    ?>
    
       <script src="test.js"></script>
