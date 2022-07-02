@@ -63,6 +63,9 @@
 
 
       str_shuffle("hello world");
+
+      str_shuffle("hello world");
+
    ?>
    
       <script src="test.js"></script>
