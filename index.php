@@ -56,6 +56,9 @@
 
       str_pad("hello",8,"*");
 
+      str_pad("hello",8,"*");
+
+
       str_shuffle("hello world");
    ?>
    
