@@ -15,8 +15,6 @@
 
       settype($num1,"bool");
       echo gettype($num1);
-      echo "<br> ========================= <br>";
-      echo "<br> ========================= <br>";
       
       function makecoffee($types = array("cappuccino"), $coffeeMaker = NULL)
       {
@@ -26,57 +24,48 @@
       echo makecoffee();
       echo makecoffee(array("cappuccino", "lavazza"), "teapot");
 
-      echo "<br> ========================= <br>";
-      echo "<br> ========================= <br>"; 
       
       $test = "hello world";
-      echo "<br> ========================= <br>"; 
-
-      
       $test[20] = "a";
       echo $test;
       echo "<br>" . $test[19];
-      echo "<br> ========================= <br>"; 
+
 
       $print_something = fn() => 
       "hello from arrow function <br>";
       $test;
       
-      
-      
-      
       echo $print_something();
       
       //string functions
-      
-      echo "<br> ========================= <br>";
-      echo "<br> ========================= <br>"; 
-
       echo strlen(trim("           hello            " ));
 
-      str_pad("hello",8,"*");
-
       echo "<br> ========================= <br>";
-      echo "<br> ========================= <br>"; 
-
-      str_pad("hello",8,"*");
-
-
-      echo "<br> ========================= <br>";
-      echo "<br> ========================= <br>"; 
 
       str_pad("hello",8,"*");
 
       echo "<br> ========================= <br>";
-      echo "<br> ========================= <br>"; 
 
-      str_shuffle("hello world");
+      echo str_pad("hello",8,"*");
+
 
       echo "<br> ========================= <br>";
-      echo "<br> ========================= <br>"; 
+
+      str_pad("hello",8,"*");
+
+      echo "<br> ========================= <br>";
+
+      echo str_shuffle("hello world");
+
+      echo "<br> ========================= <br>";
+
+      echo str_shuffle("hello world");
+
+      echo "<br> ========================= <br>";
+
+      echo wordwrap("hello world from TTPHPT",6 ,"<br>")
+
       
-      str_shuffle("hello world");
-
    ?>
    
       <script src="test.js"></script>
