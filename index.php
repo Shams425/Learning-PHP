@@ -62,8 +62,20 @@
       echo str_shuffle("hello world");
 
       echo "<br> ========================= <br>";
+      
+      echo wordwrap("hello world from TTPHPT",6 ,"<br>");
+      
+      echo "<br> ========================= <br>";
+      
+      echo similar_text("hello","hellloo");
+      
+      echo "<br> ========================= <br>";
+      
+      echo similar_text("hello","hellooll",$percent);
+      
+      echo "<br> ========================= <br>";
 
-      echo wordwrap("hello world from TTPHPT",6 ,"<br>")
+      echo $percent
 
       
    ?>
