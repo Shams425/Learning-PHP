@@ -79,13 +79,22 @@
       
       echo "<br> ========================= <br>";
 
-      $friends_key = ['EG' => "Ahmed", "SA" => "Mohamed", "US" => "sam"];
+      //Array functions
+
+      $friends_key = ['EG' => "Ahmed", "SA" => "Mohamed", "US" => "sam","SD" => "Ahmed"];
 
       echo "<pre>";
 
          print_r(array_pad($friends_key,5,"*"));
 
       echo "</pre>";
+      
+      echo "<pre>";
+
+         print_r(array_keys($friends_key,"Ahmed"));
+
+      echo "</pre>";
+      
       
    ?>
    
