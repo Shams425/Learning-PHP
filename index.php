@@ -74,9 +74,18 @@
       echo similar_text("hello","hellooll",$percent);
       
       echo "<br> ========================= <br>";
+      
+      echo $percent;
+      
+      echo "<br> ========================= <br>";
 
-      echo $percent
+      $friends_key = ['EG' => "Ahmed", "SA" => "Mohamed", "US" => "sam"];
 
+      echo "<pre>";
+
+         print_r(array_pad($friends_key,5,"*"));
+
+      echo "</pre>";
       
    ?>
    
