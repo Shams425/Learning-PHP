@@ -78,23 +78,33 @@
       echo $percent;
       
       echo "<br> ========================= <br>";
-
+      
       //Array functions
-
+      
       $friends_key = ['EG' => "Ahmed", "SA" => "Mohamed", "US" => "sam","SD" => "Ahmed"];
-
+      
       echo "<pre>";
-
-         print_r(array_pad($friends_key,5,"*"));
-
+      
+      print_r(array_pad($friends_key,5,"*"));
+      
       echo "</pre>";
       
       echo "<pre>";
-
-         print_r(array_keys($friends_key,"Ahmed"));
-
+      
+      print_r(array_keys($friends_key,"Ahmed"));
+      
       echo "</pre>";
       
+      echo "<br> ========================= <br>";
+
+      $sort_arr = ["A" => "Ahmed", "M" => "Mohamed", "S" => "Shams", "M" => "Momen"];
+
+      sor($sort_arr);
+      echo "<pre>";
+
+      print_r($sort_arr);
+
+      echo "</pre>";
       
    ?>
    
