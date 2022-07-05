@@ -115,9 +115,28 @@
       print_r($sort_arr);
       
       echo "</pre>";
-
-
       
+      echo "<br> ========================= <br>";
+
+      ksort($sort_arr);
+      
+      
+      echo "<pre>";
+      
+      print_r($sort_arr);
+      
+      echo "</pre>";
+
+      echo "<br> ========================= <br>";
+
+      ksort($sort_arr);
+      
+      
+      echo "<pre>";
+      
+      print_r($sort_arr);
+      
+      echo "</pre>";
    ?>
    
       <script src="test.js"></script>
