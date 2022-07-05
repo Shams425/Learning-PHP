@@ -96,15 +96,27 @@
       echo "</pre>";
       
       echo "<br> ========================= <br>";
-
+      
       $sort_arr = ["A" => "Ahmed", "M" => "Mohamed", "S" => "Shams", "M" => "Momen"];
-
-      sor($sort_arr);
+      
+      sort($sort_arr);
       echo "<pre>";
-
+      
       print_r($sort_arr);
-
+      
       echo "</pre>";
+      
+      echo "<br> ========================= <br>";
+      
+      rsort($sort_arr);
+      
+      echo "<pre>";
+      
+      print_r($sort_arr);
+      
+      echo "</pre>";
+
+
       
    ?>
    
