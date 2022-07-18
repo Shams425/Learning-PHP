@@ -144,7 +144,6 @@
    echo "<pre>";
    print_r(array_filter($filter_arr, fn ($val) => ($val) % 2 == 0));
    echo "</pre>";
-   
 
    echo "<br> ========================= <br>";
    
