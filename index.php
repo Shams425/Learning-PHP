@@ -1,84 +1,155 @@
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Learning PHP</title>
 </head>
+
 <body>
    <?php
       echo "hello world";
-      echo "<br> ========================= <br>";
-      $num1 = 0;
-      var_dump($num1);
-      echo "<br> ========================= <br>";
+   echo "<br> ========================= <br>";
+   $num1 = 0;
+   var_dump($num1);
+   echo "<br> ========================= <br>";
 
-      settype($num1,"bool");
-      echo gettype($num1);
-      echo "<br> ========================= <br>";
-      echo "<br> ========================= <br>";
+   settype($num1, "bool");
+   echo gettype($num1);
       
-      function makecoffee($types = array("cappuccino"), $coffeeMaker = NULL)
-      {
-         $device = is_null($coffeeMaker) ? "hands" : $coffeeMaker;
-         return "Making a cup of ".join(", ", $types)." with $device.\n";
-      }
-      echo makecoffee();
-      echo makecoffee(array("cappuccino", "lavazza"), "teapot");
-
-      echo "<br> ========================= <br>";
-      echo "<br> ========================= <br>"; 
-      
-      $test = "hello world";
-      echo "<br> ========================= <br>"; 
+   function makecoffee($types = array("cappuccino"), $coffeeMaker = null)
+   {
+       $device = is_null($coffeeMaker) ? "hands" : $coffeeMaker;
+       return "Making a cup of ".join(", ", $types)." with $device.\n";
+   }
+   echo makecoffee();
+   echo makecoffee(array("cappuccino", "lavazza"), "teapot");
 
       
-      $test[20] = "a";
-      echo $test;
-      echo "<br>" . $test[19];
-      echo "<br> ========================= <br>"; 
+   $test = "hello world";
+   $test[20] = "a";
+   echo $test;
+   echo "<br>" . $test[19];
 
-      $print_something = fn() => 
-      "hello from arrow function <br>";
-      $test;
+
+   $print_something = fn () =>
+   "hello from arrow function <br>";
+   $test;
       
+   echo $print_something();
       
+   //string functions
+   echo strlen(trim("           hello            "));
+
+   echo "<br> ========================= <br>";
+
+   str_pad("hello", 8, "*");
+
+   echo "<br> ========================= <br>";
+
+   echo str_pad("hello", 8, "*");
+
+
+   echo "<br> ========================= <br>";
+
+   str_pad("hello", 8, "*");
+
+   echo "<br> ========================= <br>";
+
+   echo str_shuffle("hello world");
+
+   echo "<br> ========================= <br>";
+
+   echo str_shuffle("hello world");
+
+   echo "<br> ========================= <br>";
       
+   echo wordwrap("hello world from TTPHPT", 6, "<br>");
       
-      echo $print_something();
+   echo "<br> ========================= <br>";
       
-      //string functions
+   echo similar_text("hello", "hellloo");
       
-      echo "<br> ========================= <br>";
-      echo "<br> ========================= <br>"; 
-
-      echo strlen(trim("           hello            " ));
-
-      str_pad("hello",8,"*");
-
-      echo "<br> ========================= <br>";
-      echo "<br> ========================= <br>"; 
-
-      str_pad("hello",8,"*");
-
-
-      echo "<br> ========================= <br>";
-      echo "<br> ========================= <br>"; 
-
-      str_pad("hello",8,"*");
-
-      echo "<br> ========================= <br>";
-      echo "<br> ========================= <br>"; 
-
-      str_shuffle("hello world");
-
-      echo "<br> ========================= <br>";
-      echo "<br> ========================= <br>"; 
+   echo "<br> ========================= <br>";
       
-      str_shuffle("hello world");
+   echo similar_text("hello", "hellooll", $percent);
+      
+   echo "<br> ========================= <br>";
+      
+   echo $percent;
+      
+   echo "<br> ========================= <br>";
+      
+   //Array functions
+      
+   $friends_key = ['EG' => "Ahmed", "SA" => "Mohamed", "US" => "sam","SD" => "Ahmed"];
+      
+   echo "<pre>";
+      
+   print_r(array_pad($friends_key, 5, "*"));
+      
+   echo "</pre>";
+      
+   echo "<pre>";
+      
+   print_r(array_keys($friends_key, "Ahmed"));
+      
+   echo "</pre>";
+      
+   echo "<br> ========================= <br>";
+      
+   $new_arr = ["A" => "Ahmed", "S" => "Shams", "M" => "Momen", "N" => "Nama"];
+      
+   echo "the sort function returns from this array:". print_r($new_arr) ." <br>";
+   sort($new_arr);
+   echo "<pre>";
+   print_r($new_arr);
+      
+   echo "</pre>";
+      
+   echo "<br> ========================= <br>";
+   echo "the rsort function returns from this array:". print_r($new_arr) ."<br>";
+   
+   rsort($new_arr);
+   
+   echo "<pre>";
+   
+   print_r($new_arr);
+   
+   echo "</pre>";
+   
+   echo "<br> ========================= <br>";
+   
+   echo "the ksort function returns from this array:". print_r($new_arr) ."<br>";
+   ksort($new_arr);
+   
+   echo "<pre>";
+   
+   print_r($new_arr);
+   
+   echo "</pre>";
+
+   echo "<br> ========================= <br>";
+   $map_arr = [1,2,3,4,5];
+   echo "the array_map function returns from this array:". print_r($new_arr) ."<br>";
+   print_r(array_map(fn ($val) => $val + 2, $map_arr));
+
+
+   echo "<br> ========================= <br>";
+
+
+
+   echo "<br> ========================= <br>";
+   
+
+
 
    ?>
-   
-      <script src="test.js"></script>
+
+
+
+   <script src="test.js"></script>
 </body>
+
 </html>
