@@ -132,13 +132,19 @@
 
    echo "<br> ========================= <br>";
    $map_arr = [1,2,3,4,5];
-   echo "the array_map function returns from this array:". print_r($new_arr) ."<br>";
-   print_r(array_map(fn ($val) => $val + 2, $map_arr));
-
-
+   echo "the array_map function returns from this array: <pre>". print_r($map_arr) ."</pre> <br>";
+   echo "<pre>";
+   print_r(array_map(fn ($val) => ($val) / 2, $map_arr));
+   echo "</pre>";
+   
    echo "<br> ========================= <br>";
-
-
+   
+   $filter_arr = [1,2,3,4,5,6,7,8];
+   echo "the array_map function returns from this array: <pre>". print_r($filter_arr) ."</pre> <br>";
+   echo "<pre>";
+   print_r(array_filter($filter_arr, fn ($val) => ($val) % 2 == 0));
+   echo "</pre>";
+   
 
    echo "<br> ========================= <br>";
    
