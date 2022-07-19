@@ -31,6 +31,15 @@ try {
     $connect = mysqli_connect($server_name, $user, $pass, "MySQLi_Testing");
 
     echo "Connected successfully.<br>";
+
+    $sql_query = "SELECT text, TRIM(text) FROM try";
+    $row = mysqli_query($connect, $sql_query);
+    if (mysqli_num_rows($row) > 0) {
+        while ($row = mysqli_fetch_array($row)) {
+            echo $row['name'];
+        }
+        echo " This is our query from PHP<br>";
+    }
 } catch (mysqli_exception $e) {
     echo "Connect failed.<br>" . $e->message;
 }
