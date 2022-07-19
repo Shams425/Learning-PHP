@@ -40,6 +40,13 @@ try {
         }
         echo " This is our query from PHP<br>";
     }
+
+    //insert sql query into database
+    $sql_insert = "INSERT INTO ('first_name', 'last_name', 'username') VALUES ('Ahmed', 'John', 'Mohamed')";
+    if ($sql_insert) {
+        $select_sql = "SELECT * FROM text WHERE first_name LIKE 'John'";
+        echo "it's insert sql using php";
+    }
 } catch (mysqli_exception $e) {
     echo "Connect failed.<br>" . $e->message;
 }
