@@ -104,6 +104,12 @@
    }
 
    echo "<br> ========================= <br>";
+
+   foreach($friends_key as $val => $index) {
+      echo "$index" . " => " . $val;
+   }
+
+   echo "<br> ========================= <br>";
       
    $sort_arr = ["A" => "Ahmed", "M" => "Mohamed", "S" => "Shams", "M" => "Momen"];
       
