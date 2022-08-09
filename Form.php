@@ -41,8 +41,8 @@
 
   <?php
     if(isset($_POST['password'])) {
-      echo "<h2>" . $_GET['e-mail'] . "</h2>";
-      echo "<h2>" . $_GET['phoneNum'] . "</h2>";
+      echo "<h2>" . $_SESSION['password'] . "</h2>";
+      echo "<h2>" . $_GET['firstName'] . "</h2>";
     }
   ?>
 </body>
