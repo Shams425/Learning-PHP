@@ -34,5 +34,16 @@
       echo "<h2>" . $_GET['phoneNum'] . "</h2>";
     }
   ?>
+  <form action="#">
+    <label for="text">Email</label>
+    <input type="password" name="password">
+  </form>
+
+  <?php
+    if(isset($_POST['password'])) {
+      echo "<h2>" . $_GET['e-mail'] . "</h2>";
+      echo "<h2>" . $_GET['phoneNum'] . "</h2>";
+    }
+  ?>
 </body>
 </html>
