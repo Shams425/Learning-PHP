@@ -150,9 +150,94 @@
    print_r($sort_arr);
       
    echo "</pre>";
+      
+   echo wordwrap("hello world from TTPHPT", 6, "<br>");
+      
+   echo "<br> ========================= <br>";
+      
+   echo similar_text("hello", "hellloo");
+      
+   echo "<br> ========================= <br>";
+      
+   echo similar_text("hello", "hellooll", $percent);
+      
+   echo "<br> ========================= <br>";
+      
+   echo $percent;
+      
+   echo "<br> ========================= <br>";
+      
+   //Array functions
+      
+   $friends_key = ['EG' => "Ahmed", "SA" => "Mohamed", "US" => "sam","SD" => "Ahmed"];
+      
+   echo "<pre>";
+      
+   print_r(array_pad($friends_key, 5, "*"));
+      
+   echo "</pre>";
+      
+   echo "<pre>";
+      
+   print_r(array_keys($friends_key, "Ahmed"));
+      
+   echo "</pre>";
+      
+   echo "<br> ========================= <br>";
+      
+   $new_arr = ["A" => "Ahmed", "S" => "Shams", "M" => "Momen", "N" => "Nama"];
+      
+   echo "the sort function returns from this array:". print_r($new_arr) ." <br>";
+   sort($new_arr);
+   echo "<pre>";
+   print_r($new_arr);
+      
+   echo "</pre>";
+      
+   echo "<br> ========================= <br>";
+   echo "the rsort function returns from this array:". print_r($new_arr) ."<br>";
+   
+   rsort($new_arr);
+   
+   echo "<pre>";
+   
+   print_r($new_arr);
+   
+   echo "</pre>";
+   
+   echo "<br> ========================= <br>";
+   
+   echo "the ksort function returns from this array:". print_r($new_arr) ."<br>";
+   ksort($new_arr);
+   
+   echo "<pre>";
+   
+   print_r($new_arr);
+   
+   echo "</pre>";
 
-
-
+   echo "<br> ========================= <br>";
+   $map_arr = [1,2,3,4,5];
+   echo "the array_map function returns from this array: <pre>". print_r($map_arr) ."</pre> <br>";
+   echo "<pre>";
+   print_r(array_map(fn ($val) => ($val) / 2, $map_arr));
+   echo "</pre>";
+   
+   echo "<br> ========================= <br>";
+   
+   $filter_arr = [1,2,3,4,5,6,7,8];
+   echo "the array_map function returns from this array: <pre>". print_r($filter_arr) ."</pre> <br>";
+   echo "<pre>";
+   print_r(array_filter($filter_arr, fn ($val) => ($val) % 2 == 0));
+   echo "</pre>";
+   
+   echo "<br> ========================= <br>";
+   
+   $reduce_arr = [1,2,3,4,5,6,7,8];
+   echo "the array_map function returns from this array: <pre>". print_r($filter_arr) ."</pre> <br>";
+   echo "<pre>";
+   print_r(array_reduce($reduce_arr, fn ($acc, $val) => ($acc + $val)));
+   echo "</pre>";
    ?>
 
 

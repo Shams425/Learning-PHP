@@ -1,12 +1,12 @@
 <?php
-  $dsn = "mysql:host=localhost;dbname=users";
+  $data_base = "users";
   $user = "root";
   $password = "";
 
   
   $userName = "Ahmed";
   try {
-    $connect = new PDO($dsn, $password,$user);
+    $connect = mysqli_connect("localhost", $user, $password, $data_base);
     $sql = "SELECT * FROM users WHERE username LIKE '%$userName'";
 
     $connect -> execute($sql);
