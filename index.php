@@ -226,7 +226,7 @@
    echo "<br> ========================= <br>";
    
    $filter_arr = [1,2,3,4,5,6,7,8];
-   echo "the array_map function returns from this array: <pre>". print_r($filter_arr) ."</pre> <br>";
+   echo "the filter_arr function returns from this array: <pre>". print_r($filter_arr) ."</pre> <br>";
    echo "<pre>";
    print_r(array_filter($filter_arr, fn ($val) => ($val) % 2 == 0));
    echo "</pre>";
@@ -234,10 +234,14 @@
    echo "<br> ========================= <br>";
    
    $reduce_arr = [1,2,3,4,5,6,7,8];
-   echo "the array_map function returns from this array: <pre>". print_r($filter_arr) ."</pre> <br>";
+   echo "the reduce_arr function returns from this array: <pre>". print_r($filter_arr) ."</pre> <br>";
    echo "<pre>";
    print_r(array_reduce($reduce_arr, fn ($acc, $val) => ($acc + $val)));
    echo "</pre>";
+
+   $num_arr = [1,2,3,4,5];
+   echo "the minumm number in ". "<pre>".print_r($num_arr)."</pre>". min($num_arr);
+   
    ?>
 
 
