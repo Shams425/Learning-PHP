@@ -240,12 +240,12 @@
    echo "</pre>";
 
    $num_arr = [1,2,3,4,5];
-   echo "the minumm number in ". "<pre>".print_r($num_arr)."</pre>". min($num_arr);
+   echo "the minium number in ". "<pre>".print_r($num_arr)."</pre>". min($num_arr);
    echo "<br> ========================= <br>";
 
 
    $num_arr2 = [1,2,3,4,5];
-   echo "the minumm number in ". "<pre>".print_r($num_arr)."</pre>". min($num_arr);
+   echo "the maximum number in ". "<pre>".print_r($num_arr)."</pre>". max($num_arr);
    
    ?>
 
